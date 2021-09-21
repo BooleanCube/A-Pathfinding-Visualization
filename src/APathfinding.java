@@ -384,6 +384,13 @@ public class APathfinding {
 		borders.remove(location);
 	}
 
+	public void removeBorder(Node node) {
+		if(borders.indexOf(node) > -1) {
+			borders.remove(borders.indexOf(node));
+		}
+	}
+
+
 	public void removeOpen(int location) {
 		open.remove(location);
 	}
